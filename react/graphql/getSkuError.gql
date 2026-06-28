@@ -1,0 +1,3 @@
+query getSkuError($from: Int, $to: Int) {
+  getSkuErrorList(from: $from, to: $to)
+}

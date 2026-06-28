@@ -1,0 +1,6 @@
+{
+  "admin.app.example": {
+    "component": "index",
+    "path": "/admin/app/shopify-connector"
+  }
+}

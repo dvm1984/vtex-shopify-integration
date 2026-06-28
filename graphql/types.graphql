@@ -1,0 +1,4 @@
+type ProductError {
+  productId: Int
+  productName: String
+}

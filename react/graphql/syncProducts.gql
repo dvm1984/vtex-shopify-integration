@@ -1,0 +1,3 @@
+mutation syncProducts($data: String) {
+  syncProducts(data: $data)
+}

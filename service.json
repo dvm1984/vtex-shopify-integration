@@ -1,0 +1,57 @@
+{
+  "memory": 256,
+  "ttl": 60,
+  "timeout": 5,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "createFulfillment": {
+      "path": "/create-fulfillment",
+      "public": true
+    },
+    "updateFulfillment": {
+      "path": "/update-fulfillment",
+      "public": true
+    },
+    "createProduct": {
+      "path": "/product-creation",
+      "public": true
+    },
+    "productUpdate": {
+      "path": "/product-update",
+      "public": true
+    },
+    "activePoint": {
+      "path": "/active-point",
+      "public": true
+    },
+    "cronEndpoint": {
+      "path": "/cron-point",
+      "public": true
+    },
+    "getProducts": {
+      "path": "/get-product",
+      "public": true
+    },
+    "updateOrder": {
+      "path": "/order-update",
+      "public": true
+    },
+    "productDeletion": {
+      "path": "/product-deletion",
+      "public": true
+    }
+  },
+  "events": {
+    "onAppInstalled": {
+      "sender": "apps",
+      "keys": ["setup"],
+      "settingsType": "workspace"
+    },
+    "onSettingsChanged": {
+      "sender": "apps",
+      "keys": ["settings"]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.forms{
+    max-width: 630px;
+    margin-top: 60px;
+}
+.forms label span{
+    font-size: 18px;
+}
+button,.connect{
+    transition: 0.2s all; 
+}
+button:active,.connect:active {
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+}   

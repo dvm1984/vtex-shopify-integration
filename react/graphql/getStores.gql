@@ -1,0 +1,3 @@
+query getStores($from: Int, $to: Int) {
+  getStoresList(from: $from, to: $to)
+}

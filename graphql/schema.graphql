@@ -1,0 +1,15 @@
+type Query {
+  getProductErrorList(from: Int, to: Int): String @auth(scope: PUBLIC)
+  getSkuErrorList(from: Int, to: Int): String @auth(scope: PUBLIC)
+  getStoresList(from: Int, to: Int): String @auth(scope: PUBLIC)
+  getBulk: String @auth(scope: PUBLIC)
+  getCurrentStore(data: String): String @auth(scope: PUBLIC)
+  getStoreStatus(data: String): String @auth(scope: PUBLIC)
+}
+
+type Mutation {
+  syncProducts(data: String): String @auth(scope: PUBLIC)
+  deleteStores(data: String): String @auth(scope: PUBLIC)
+  restartBulk(data: String): String @auth(scope: PUBLIC)
+  registerWebhooks(url: String): String @auth(scope: PUBLIC)
+}

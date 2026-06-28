@@ -1,0 +1,3 @@
+mutation registerWebhooks($url: String) {
+  registerWebhooks(url: $url)
+}

@@ -1,0 +1,3 @@
+mutation deleteStores($data: String) {
+  deleteStores(data: $data)
+}

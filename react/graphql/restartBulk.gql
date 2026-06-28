@@ -1,0 +1,3 @@
+mutation restartBUlk($data: String) {
+  restartBulk(data: $data)
+}

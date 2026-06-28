@@ -1,0 +1,3 @@
+query getProductError($from: Int, $to: Int) {
+  getProductErrorList(from: $from, to: $to)
+}

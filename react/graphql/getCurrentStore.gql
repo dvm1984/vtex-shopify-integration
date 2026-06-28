@@ -1,0 +1,3 @@
+query getCurrentStore($data: String) {
+  getCurrentStore(data: $data)
+}
